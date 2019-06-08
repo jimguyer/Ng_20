@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace NG_20.Controllers
+namespace Ng_20.Controllers
 {
     public class HomeController : Controller
     {

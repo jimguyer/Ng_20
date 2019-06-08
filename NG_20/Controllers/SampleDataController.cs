@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
 
-namespace NG_20.Controllers
+namespace Ng_20.Controllers
 {
     [Route("api/[controller]/[action]")]
     public class SampleDataController : Controller
