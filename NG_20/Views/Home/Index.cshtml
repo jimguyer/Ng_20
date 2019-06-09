@@ -17,10 +17,7 @@
 
     <link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />
 </head>
-<body>
-    var model = JSON.parse('@Html.Raw(Json.Serialize(Model))');
-
-
+<body>   
     <app asp-prerender-module="ClientApp/dist/main-server">Loading...</app>
     <script>
         var model = JSON.parse('@Html.Raw(Json.Serialize(Model))');
