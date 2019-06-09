@@ -17,7 +17,7 @@
     <app asp-prerender-module="ClientApp/dist/main-server">Loading...</app>
     <script>
         var model = JSON.parse('@Html.Raw(Json.Serialize(Model))');
-        //alert("Index.cshtml")
+        console.log("Index.cshtml * model=" + JSON.stringify(model))
     </script>
     <script src="~/dist/vendor.js" asp-append-version="true"></script>
     <script src="~/dist/main-client.js" asp-append-version="true"></script>
