@@ -11,7 +11,8 @@ namespace Ng_20.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var viewModel = new Ng_20.Views.Home.IndexModel() { IsLoggedIn = true, Role = "Member" };
+            return View("Index", viewModel);
         }
 
         public IActionResult Error()
