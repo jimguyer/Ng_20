@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />
 </head>
-<body>   
+<body>
     <app asp-prerender-module="ClientApp/dist/main-server">Loading...</app>
     <script>
         var model = JSON.parse('@Html.Raw(Json.Serialize(Model))');
@@ -26,9 +26,10 @@
 
 
     </script>
-    <script src="~/dist/vendor.js" asp-append-version="true"></script>
-    @section scripts {
+    @*<script src="~/dist/vendor.js" asp-append-version="true"></script>*@
+    <script src="~/dist/main-client.js" asp-append-version="true"></script>
+    @*@section scripts {
         <script src="~/dist/main-client.js" asp-append-version="true"></script>
-    }
+    }*@
 </body>
 </html>
