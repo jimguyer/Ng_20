@@ -11,7 +11,7 @@ namespace Ng_20.Controllers
     {
         public IActionResult Index()
         {
-            var viewModel = new Ng_20.Views.Home.IndexModel() { IsLoggedIn = true, Role = "Member" };
+            var viewModel = new IndexModel() { IsLoggedIn = true, Role = "Member" };
             return View("Index", viewModel);
         }
 
@@ -19,6 +19,11 @@ namespace Ng_20.Controllers
         {
             ViewData["RequestId"] = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
             return View();
+        }
+        public class IndexModel
+        {
+            public bool IsLoggedIn { get; set; }
+            public string Role { get; set; }
         }
     }
 }
